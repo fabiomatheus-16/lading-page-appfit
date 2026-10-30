@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-text: #17231d;
+    --color-muted: #68756d;
+    --color-primary: #216b4b;
+    --color-primary-dark: #164b35;
+    --color-background: #ffffff;
+    --color-soft: #f2f7f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background: var(--color-background);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1.5rem 2rem;
+}
+
+.brand {
+    align-items: center;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.brand-mark {
+    align-items: center;
+    background: var(--color-primary-dark);
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 2.5rem;
+    justify-content: center;
+    width: 2.5rem;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.download-button {
+    background: var(--color-primary);
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 0.8rem 1.35rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.download-button:hover,
+.download-button:focus-visible {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.hero {
+    align-items: center;
+    display: flex;
+    gap: clamp(2rem, 6vw, 6rem);
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 90vh;
+    padding: 3rem 2rem 5rem;
+}
+
+.hero-content,
+.hero-features {
+    flex: 1 1 0;
+    max-width: 300px;
+}
+
+.hero-content {
+    order: 1;
+}
+
+.hero-image {
+    align-items: center;
+    display: flex;
+    flex: 0 1 300px;
+    justify-content: center;
+    order: 2;
+}
+
+.hero-image img {
+    display: block;
+    height: auto;
+    max-height: 72vh;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.hero-features {
+    order: 3;
+}
+
+.eyebrow {
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(2rem, 3.2vw, 3.25rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1.12;
+    margin: 0;
+}
+
+.hero-description {
+    color: var(--color-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1.5rem 0 0;
+}
+
+.hero-features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-features li {
+    align-items: center;
+    background: var(--color-soft);
+    border-radius: 0.8rem;
+    display: flex;
+    font-size: 1.05rem;
+    font-weight: 500;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.hero-features li span {
+    font-size: 1.35rem;
+}
+
+.features {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 5rem 1.25rem;
+}
+
+.section-heading {
+    margin: 0 auto 3.5rem;
+    max-width: 32rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.feature {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-image {
+    align-items: center;
+    background: var(--color-soft);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.feature-image img {
+    display: block;
+    height: auto;
+    max-height: 500px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.feature-content {
+    max-width: 28rem;
+}
+
+.feature-number {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin: 0 0 0.8rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.feature-content > p:not(.feature-number) {
+    color: var(--color-muted);
+    line-height: 1.6;
+    margin: 1rem 0 0;
+}
+
+.download-cta {
+    align-items: center;
+    background: var(--color-soft);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1.25rem 5rem;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.download-cta h2 {
+    max-width: 32rem;
+}
+
+.download-button-large {
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+.free-label {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    margin: 1rem 0 0;
+}
+
+.site-footer {
+    border-top: 1px solid #e3ebe5;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .hero-image {
+        flex-basis: 230px;
+    }
+}
+
+@media (min-width: 700px) {
+    .features {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .feature {
+        flex-direction: row;
+        gap: clamp(3rem, 8vw, 7rem);
+        justify-content: center;
+    }
+
+    .feature-reversed {
+        flex-direction: row-reverse;
+    }
+
+    .feature-image,
+    .feature-content {
+        flex: 1 1 0;
+    }
+
+    .feature-image {
+        max-width: 24rem;
+    }
+
+    .download-cta {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        padding: 1.25rem;
+    }
+
+    .brand-name {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+        padding: 2rem 1.25rem 4rem;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-features {
+        max-width: 32rem;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+        max-width: 220px;
+        order: 2;
+    }
+
+    .hero-features {
+        order: 3;
+        text-align: left;
+        width: 100%;
+    }
+
+    .hero-features .eyebrow {
+        text-align: center;
+    }
+}
