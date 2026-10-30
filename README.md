@@ -73,7 +73,7 @@ O projeto foi totalmente planejado para se adaptar perfeitamente a diferentes ta
 
 1. Clone o repositório para o seu computador:
    ```bash
-   git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+   git clone https://github.com/fabiomatheus-16/lading-page-appfit/
    ```
 2. Abra a pasta do projeto no seu editor de código favorito (como o **VS Code**).
 3. Abra o arquivo `index.html` diretamente no seu navegador ou utilize uma extensão como o *Live Server*.
